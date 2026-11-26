@@ -17,8 +17,10 @@
 
 .results-table-wrap {
   margin: 0;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  border: 0;
 }
 
 .results-table { min-width: 0; }
