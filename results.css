@@ -17,7 +17,9 @@
 
 .results-table-wrap {
   margin: 0;
+  border: 0;
   border-radius: var(--radius);
+  box-shadow: none;
 }
 
 .results-table { min-width: 0; }
