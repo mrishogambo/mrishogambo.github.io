@@ -1,0 +1,122 @@
+/* Cartoon stand-ins for people photographs: keep real school branding, replace portraits. */
+.person-card img.person-photo,
+.dept-body img.dept-avatar,
+.teacher-card img,
+.hero > img,
+.modal-content img,
+img.school-logo[src="students.png"] {
+  display: none !important;
+}
+
+/* Anonymous, friendly comic avatars */
+.person-card::before,
+.teacher-card::before,
+.dept-body::before {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  color: var(--comic-black, #18243a);
+  font-family: var(--font-body, sans-serif);
+  line-height: 1;
+  border: 4px solid var(--comic-black, #18243a);
+  background-color: var(--yellow, #ffd43b);
+  background-image: radial-gradient(circle, rgba(24,36,58,.28) 1px, transparent 1.5px);
+  background-size: 9px 9px;
+  box-shadow: 4px 4px 0 var(--comic-black, #18243a);
+}
+.person-card::before {
+  content: "🧑🏾‍🏫";
+  width: 132px;
+  height: 132px;
+  margin: 0 auto .8rem;
+  border-radius: 50%;
+  font-size: 4.4rem;
+}
+.teacher-card::before {
+  content: "🧑🏾‍🏫";
+  width: 116px;
+  height: 116px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  font-size: 3.8rem;
+  background-color: var(--paper-blue, #edf5ff);
+}
+.dept-body::before {
+  content: "🦸🏾‍♀️";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.65rem;
+  background-color: var(--paper-blue, #edf5ff);
+}
+
+/* Turn the home banner into an illustrated comic panel instead of a people photo. */
+.hero {
+  min-height: 480px;
+  background-color: #315fbd;
+  background-image: radial-gradient(circle, rgba(255,255,255,.22) 1.5px, transparent 1.7px),
+    linear-gradient(135deg, #315fbd 0 48%, #ef5da8 48% 51%, #ffd43b 51% 100%);
+  background-size: 14px 14px, 100% 100%;
+}
+.hero::before {
+  content: "🧑🏾‍🎓  🧑🏿‍🎓  🧑🏽‍🎓";
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  right: 4%;
+  width: 48%;
+  min-height: 58%;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  text-align: center;
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 1.4;
+  background: rgba(255,253,244,.86);
+  border: 5px solid var(--comic-black, #18243a);
+  border-radius: 44% 46% 43% 48%;
+  box-shadow: 9px 10px 0 var(--comic-black, #18243a);
+  transform: rotate(3deg);
+}
+.hero::after { z-index: 1; background: linear-gradient(90deg,rgba(24,36,58,.9),rgba(24,36,58,.46) 52%,transparent); }
+.hero-copy { z-index: 2; }
+
+/* Comic staff panel for the teacher feature on the departments page. */
+.slideshow-teachers .slide {
+  background-image: radial-gradient(circle, rgba(24,36,58,.16) 1.5px, transparent 1.8px) !important;
+  background-color: #ffd43b;
+  background-size: 12px 12px !important;
+}
+.slideshow-teachers .slide::before {
+  content: "🧑🏾‍🏫  👩🏽‍🏫  🧑🏿‍🏫";
+  position: absolute;
+  inset: 0 0 2.8rem;
+  display: grid;
+  place-items: center;
+  color: var(--comic-black, #18243a);
+  font-size: clamp(3rem, 8vw, 6rem);
+  text-align: center;
+}
+
+/* Gallery photos are unavailable in this repository; show one intentional comic montage. */
+.modal-content img { display: none !important; }
+.modal-content::after {
+  content: "💥   📚   🔬   🏆";
+  display: grid;
+  place-items: center;
+  min-height: 170px;
+  margin: .75rem 0 1rem;
+  color: var(--comic-black, #18243a);
+  background: var(--paper-blue, #edf5ff);
+  border: 4px solid var(--comic-black, #18243a);
+  box-shadow: 5px 5px 0 var(--comic-black, #18243a);
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  letter-spacing: .15em;
+}
+
+@media (max-width: 768px) {
+  .hero { min-height: 220px; }
+  .hero::before { top: 13%; right: 3%; width: 42%; min-height: 62%; font-size: clamp(2rem, 10vw, 4rem); }
+  .person-card::before { width: 110px; height: 110px; font-size: 3.7rem; }
+  .teacher-card::before { width: 100px; height: 100px; font-size: 3.2rem; }
+}
