@@ -1,0 +1,80 @@
+/* More legible comic typography, shared across every page. */
+h1, h2, h3, h4 {
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  text-wrap: pretty;
+}
+
+.page-title {
+  font-size: clamp(2.5rem, 7vw, 4.8rem);
+  letter-spacing: 0.015em;
+  line-height: 1.16;
+}
+
+section > h2 {
+  font-size: clamp(1.9rem, 3.2vw, 2.45rem);
+}
+
+.card h3,
+.news-item h3,
+.teacher-card h3 {
+  font-size: clamp(1.35rem, 2vw, 1.65rem);
+  line-height: 1.22;
+}
+
+/* Keep the punchy comic labels, but use the clearer body face at small sizes. */
+.main-nav a,
+.nav-brand,
+.eyebrow,
+.btn,
+.dept-top,
+.teacher-card .role,
+.close-btn,
+th,
+.admission-faq summary {
+  font-family: var(--font-body);
+  font-weight: 900;
+  letter-spacing: 0.035em;
+  line-height: 1.35;
+}
+
+.main-nav a {
+  font-size: 1rem;
+}
+
+.eyebrow {
+  font-size: 0.9rem;
+}
+
+.btn {
+  font-size: 0.98rem;
+  text-transform: uppercase;
+}
+
+.dept-top,
+th {
+  font-size: 0.98rem;
+}
+
+.site-header h1 {
+  line-height: 1.18;
+}
+
+.site-header .tagline {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 768px) {
+  .site-header h1 {
+    font-size: 1.65rem;
+  }
+
+  .page-title {
+    font-size: clamp(2.3rem, 10vw, 3rem);
+  }
+
+  .main-nav a {
+    font-size: 1.05rem;
+  }
+}
