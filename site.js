@@ -1,41 +1,40 @@
-// Mrisho Gambo Secondary School — shared site behaviour
-// Mobile nav toggle + gentle scroll-reveal for content sections.
-
+// Shared comic-avatar treatment for all people photos.
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile navigation
-  const toggle = document.querySelector('.nav-toggle');
-  const menu = document.querySelector('.main-nav ul');
+  const css = document.createElement('link');
+  css.rel = 'stylesheet';
+  css.href = 'comic-people.css';
+  document.head.appendChild(css);
 
-  if (toggle && menu) {
-    toggle.addEventListener('click', () => {
-      const open = menu.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
+  document.querySelectorAll('.person-photo, .dept-avatar, .teacher-card > img').forEach(img => {
+    img.replaceWith(createAvatar('🧑🏾‍🏫', 'cartoon-person'));
+  });
 
-    menu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        menu.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
-      });
-    });
-  }
+  document.querySelectorAll('.hero > img').forEach(img => {
+    img.replaceWith(createAvatar('🧑🏾‍🎓  🧑🏿‍🎓  🧑🏽‍🎓', 'cartoon-students', true));
+  });
 
-  // Scroll reveal for sections/cards
-  const revealTargets = document.querySelectorAll('main section, .card, .news-item, .teacher-card, .material-card, .dept-card, .person-card');
-  revealTargets.forEach(el => el.classList.add('reveal'));
+  document.querySelectorAll('.modal-content img').forEach(img => img.remove());
 
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.modal-content').forEach(modal => {
+    if (!modal.querySelector('.cartoon-montage')) {
+      const montage = document.createElement('div');
+      montage.className = 'cartoon-montage';
+      montage.setAttribute('aria-label', 'Comic illustration');
+      montage.textContent = '📚  🔬  🏆  ⚡';
+      const closeButton = modal.querySelector('.close-btn');
+      modal.insertBefore(montage, closeButton);
+    }
+  });
 
-    revealTargets.forEach(el => observer.observe(el));
-  } else {
-    revealTargets.forEach(el => el.classList.add('is-visible'));
+  const teacherSlide = document.querySelector('.slideshow-teachers .slide');
+  if (teacherSlide) teacherSlide.classList.add('cartoon-teachers-slide');
+
+  function createAvatar(text, className, wide = false) {
+    const avatar = document.createElement('div');
+    avatar.className = `${className}${wide ? ' cartoon-students-wide' : ''}`;
+    avatar.setAttribute('role', 'img');
+    avatar.setAttribute('aria-label', 'Anonymous cartoon-style person illustration');
+    avatar.textContent = text;
+    return avatar;
   }
 });
