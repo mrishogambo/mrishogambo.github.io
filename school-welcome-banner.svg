@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 620" role="img" aria-labelledby="title desc">
+  <title id="title">A welcoming school day</title>
+  <desc id="desc">A bright, comic-inspired illustration of a school building, trees and students walking to class.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#78c9f4"/>
+      <stop offset="1" stop-color="#e4f6ff"/>
+    </linearGradient>
+    <linearGradient id="building" x2="0" y2="1">
+      <stop stop-color="#fff8df"/>
+      <stop offset="1" stop-color="#f3d996"/>
+    </linearGradient>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.7" fill="#18243a" opacity=".14"/>
+    </pattern>
+    <pattern id="brick" width="56" height="30" patternUnits="userSpaceOnUse">
+      <path d="M0 29.5h56M28 0v15M0 15h56M8 15v14" fill="none" stroke="#b88742" stroke-width="2" opacity=".35"/>
+    </pattern>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1600v620H0z"/>
+  <path fill="url(#dots)" d="M0 0h1600v620H0z"/>
+  <circle cx="1355" cy="115" r="62" fill="#ffd43b" stroke="#18243a" stroke-width="8"/>
+  <path d="M0 432c180-65 290-22 445-42 150-19 246-73 403-31 137 37 248 14 378-24 154-46 263 8 374 31v254H0z" fill="#73c96b" stroke="#18243a" stroke-width="8"/>
+  <path d="M0 520c225-42 403-23 580 4 222 34 370 17 548-11 184-29 306-23 472 7v100H0z" fill="#42aa5b"/>
+  <!-- School -->
+  <path d="M520 252 930 102l420 150v59H520z" fill="#ed654f" stroke="#18243a" stroke-width="12" stroke-linejoin="round"/>
+  <path d="m573 258 357-130 367 130v289H573z" fill="url(#building)" stroke="#18243a" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M573 258h724v289H573z" fill="url(#brick)" opacity=".7"/>
+  <path d="M865 547V383q0-17 18-17h92q18 0 18 17v164" fill="#2f63cb" stroke="#18243a" stroke-width="10"/>
+  <path d="M911 547V408q0-12 12-12h25q12 0 12 12v139" fill="#bfe8ff" stroke="#18243a" stroke-width="6"/>
+  <circle cx="946" cy="478" r="5" fill="#ffd43b"/>
+  <g fill="#a8e3ff" stroke="#18243a" stroke-width="9">
+    <path d="M632 313h100v86H632z"/><path d="M782 313h67v86h-67z"/>
+    <path d="M1060 313h67v86h-67z"/><path d="M1173 313h100v86h-100z"/>
+    <path d="M632 433h100v76H632z"/><path d="M782 433h67v76h-67z"/>
+    <path d="M1060 433h67v76h-67z"/><path d="M1173 433h100v76h-100z"/>
+  </g>
+  <g stroke="#18243a" stroke-width="7">
+    <path d="M682 313v86m-50-43h100M815 313v86m-33-43h67M1093 313v86m-33-43h67M1223 313v86m-50-43h100"/>
+    <path d="M682 433v76m-50-38h100M815 433v76m-33-38h67M1093 433v76m-33-38h67M1223 433v76m-50-38h100"/>
+  </g>
+  <path d="M838 251h185l-92-64z" fill="#ffd43b" stroke="#18243a" stroke-width="8" stroke-linejoin="round"/>
+  <text x="930" y="239" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="900" fill="#18243a">LEARN • GROW • LEAD</text>
+  <!-- Trees -->
+  <g stroke="#18243a" stroke-width="9" stroke-linejoin="round">
+    <path d="M258 505v-95m0 50-42-42m42 19 40-45" fill="none" stroke-width="18"/>
+    <circle cx="213" cy="391" r="53" fill="#2bb673"/><circle cx="271" cy="354" r="63" fill="#49c77b"/><circle cx="319" cy="403" r="50" fill="#2bb673"/>
+    <path d="M1428 510v-95m0 50-42-42m42 19 40-45" fill="none" stroke-width="18"/>
+    <circle cx="1383" cy="396" r="53" fill="#2bb673"/><circle cx="1441" cy="359" r="63" fill="#49c77b"/><circle cx="1489" cy="408" r="50" fill="#2bb673"/>
+  </g>
+  <!-- Welcoming students -->
+  <g stroke="#18243a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(390 0)">
+      <circle cx="0" cy="421" r="28" fill="#9b5b3e"/><path d="M-30 416q28-44 59 0" fill="#18243a"/>
+      <path d="M-33 457q33-18 66 0l17 77h-99z" fill="#2f63cb"/><path d="m-23 530-10 48m47-48 12 48" fill="none" stroke-width="13"/>
+      <path d="m-24 467-36 37m82-37 24-37" fill="none" stroke-width="12"/><path d="m-9 461 21 3-10 39-22-5z" fill="#fff8df"/>
+    </g>
+    <g transform="translate(465 10) scale(.88)">
+      <circle cx="0" cy="421" r="28" fill="#6f3f32"/><path d="M-31 413q28-43 60 0" fill="#18243a"/>
+      <path d="M-33 457q33-18 66 0l17 77h-99z" fill="#ed654f"/><path d="m-23 530-10 48m47-48 12 48" fill="none" stroke-width="13"/>
+      <path d="m-24 467-34 34m80-34 30 18" fill="none" stroke-width="12"/><path d="m-9 461 21 3-10 39-22-5z" fill="#fff8df"/>
+    </g>
+    <g transform="translate(1195 10) scale(.9)">
+      <circle cx="0" cy="421" r="28" fill="#8b5037"/><path d="M-31 413q28-43 60 0" fill="#18243a"/>
+      <path d="M-33 457q33-18 66 0l17 77h-99z" fill="#2bb673"/><path d="m-23 530-10 48m47-48 12 48" fill="none" stroke-width="13"/>
+      <path d="m-24 467-36 37m82-37 30-23" fill="none" stroke-width="12"/><path d="m-9 461 21 3-10 39-22-5z" fill="#fff8df"/>
+    </g>
+    <g transform="translate(1275 0)">
+      <circle cx="0" cy="421" r="28" fill="#69402f"/><path d="M-31 413q28-43 60 0" fill="#18243a"/>
+      <path d="M-33 457q33-18 66 0l17 77h-99z" fill="#ffd43b"/><path d="m-23 530-10 48m47-48 12 48" fill="none" stroke-width="13"/>
+      <path d="m-24 467-34 34m80-34 29 18" fill="none" stroke-width="12"/><path d="m-9 461 21 3-10 39-22-5z" fill="#fff8df"/>
+    </g>
+  </g>
+  <g fill="#fffdf4" stroke="#18243a" stroke-width="6">
+    <path d="M102 154q20-25 43 0 25-26 48 0-23 19-46 4-23 16-45-4z"/>
+    <path d="M350 100q18-20 36 0 20-21 38 0-18 15-37 3-19 13-37-3z"/>
+  </g>
+</svg>
