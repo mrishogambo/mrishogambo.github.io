@@ -3,8 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admission | Mrisho Gambo Secondary School</title>
+  <meta name="description" content="Learn how to enquire about Form One placement or transfer admission at Mrisho Gambo Secondary School.">
+  <title>Admissions | Mrisho Gambo Secondary School</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .admission-intro {
+      background: var(--panel);
+      border-radius: var(--radius-lg);
+      padding: clamp(1.5rem, 4vw, 3rem);
+      text-align: center;
+      margin-bottom: 2.5rem;
+      border-top: 4px solid var(--gold);
+    }
+    .admission-intro h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 0.75rem; }
+    .admission-intro p { max-width: 700px; margin: 0 auto 1.4rem; color: var(--text-muted); }
+    .admission-steps { counter-reset: admission-step; }
+    .admission-steps .card { position: relative; padding-top: 3.5rem; }
+    .admission-steps .card::before {
+      counter-increment: admission-step;
+      content: counter(admission-step);
+      position: absolute;
+      top: 1.25rem;
+      left: 1.5rem;
+      display: grid;
+      place-items: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: var(--indigo);
+      color: var(--paper);
+      font-family: var(--font-display);
+      font-weight: 700;
+    }
+    .admission-note {
+      background: #fff8e9;
+      border-left: 4px solid var(--gold);
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.2rem;
+      color: var(--text);
+      margin-top: 1.25rem;
+    }
+    .admission-faq { max-width: 800px; margin: 0 auto; }
+    .admission-faq details {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+    .admission-faq summary { color: var(--ink); font-family: var(--font-display); font-weight: 700; cursor: pointer; }
+    .admission-faq details p { color: var(--text-muted); margin-top: 0.75rem; }
+    .admission-contact { text-align: center; background: var(--indigo); color: var(--paper); padding: 2rem; border-radius: var(--radius-lg); }
+    .admission-contact h2 { color: var(--paper); margin-bottom: 0.5rem; }
+    .admission-contact p { color: rgba(255,255,255,.88); margin-bottom: 1.2rem; }
+  </style>
 </head>
 <body>
 
@@ -16,7 +68,7 @@
     </div>
   </header>
 
-    <nav class="main-nav">
+  <nav class="main-nav">
     <div class="nav-inner">
       <span class="nav-brand">Menu</span>
       <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -27,7 +79,7 @@
       <li><a href="home.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="departments.html">Departments</a></li>
-      <li><a href="admission.html" class="active">Admission</a></li>
+      <li><a href="admission.html" class="active" aria-current="page">Admission</a></li>
       <li><a href="results.html">Results</a></li>
       <li><a href="news.html">News</a></li>
       <li><a href="notes.html">Materials</a></li>
@@ -36,94 +88,81 @@
   </nav>
 
   <main>
-    <span class="eyebrow text-center">Records</span>
-    <h1 class="page-title">Admission History</h1>
+    <span class="eyebrow">Admissions</span>
+    <h1 class="page-title">Start your journey with us</h1>
     <p class="page-subtitle">
-      Welcome to the official admission history page of Mrisho Gambo Secondary School.
-      Below is a summary of student admissions over all academic years.
+      We welcome families interested in joining the Mrisho Gambo Secondary School community.
+      Contact our administration for current places, application dates and the official requirements.
     </p>
 
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Details</th>
-            <th>2020</th>
-            <th>2021</th>
-            <th>2022</th>
-            <th>2023</th>
-            <th>2024</th>
-            <th>2025</th>
-            <th>2026</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Form One Girls</td>
-            <td>98</td><td>100</td><td>125</td><td>134</td><td>142</td><td>150</td><td>205</td>
-          </tr>
-          <tr>
-            <td>Form One Boys</td>
-            <td>85</td><td>92</td><td>102</td><td>123</td><td>111</td><td>136</td><td>195</td>
-          </tr>
-          <tr>
-            <td><strong>Form One Total</strong></td>
-            <td>183</td><td>192</td><td>227</td><td>257</td><td>253</td><td>286</td><td>400</td>
-          </tr>
-          <tr>
-            <td>Form Two Girls</td>
-            <td>-</td><td>143</td><td>159</td><td>175</td><td>180</td><td>175</td><td>229</td>
-          </tr>
-          <tr>
-            <td>Form Two Boys</td>
-            <td>-</td><td>129</td><td>136</td><td>143</td><td>150</td><td>160</td><td>221</td>
-          </tr>
-          <tr>
-            <td><strong>Form Two Total</strong></td>
-            <td>-</td><td>272</td><td>295</td><td>318</td><td>330</td><td>335</td><td>450</td>
-          </tr>
-          <tr>
-            <td>Form Three Girls</td>
-            <td>-</td><td>-</td><td>189</td><td>209</td><td>232</td><td>240</td><td>287</td>
-          </tr>
-          <tr>
-            <td>Form Three Boys</td>
-            <td>-</td><td>-</td><td>150</td><td>169</td><td>181</td><td>190</td><td>246</td>
-          </tr>
-          <tr>
-            <td><strong>Form Three Total</strong></td>
-            <td>-</td><td>-</td><td>339</td><td>378</td><td>413</td><td>430</td><td>533</td>
-          </tr>
-          <tr>
-            <td>Form Four Girls</td>
-            <td>-</td><td>-</td><td>-</td><td>145</td><td>167</td><td>188</td><td>192</td>
-          </tr>
-          <tr>
-            <td>Form Four Boys</td>
-            <td>-</td><td>-</td><td>-</td><td>119</td><td>125</td><td>119</td><td>120</td>
-          </tr>
-          <tr>
-            <td><strong>Form Four Total</strong></td>
-            <td>-</td><td>—</td><td>—</td><td>264</td><td>292</td><td>307</td><td>312</td>
-          </tr>
-          <tr>
-            <td><strong>Grand Total</strong></td>
-            <td>183</td><td>464</td><td>861</td><td>1217</td><td>1288</td><td>1358</td><td>1695</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <section class="admission-intro" aria-labelledby="welcome-heading">
+      <h2 id="welcome-heading">A clear path to joining our school</h2>
+      <p>
+        Whether you are asking about Form One placement or a transfer into another form,
+        our school administration can guide you through the next steps and answer your questions.
+      </p>
+      <a href="contact.html" class="btn btn-accent">Ask about admission</a>
+    </section>
 
-    <section class="mt-2">
-      <h2>Our Short Admission History</h2>
-      <p class="max-w-prose mx-auto text-muted leading-relaxed text-center">
-        Our beloved school has gone through many positive changes since the beginning in terms of the number of students
-        entering and the warm adjustments made to suit their needs. We are proud and happy to continue
-        receiving more students who will be trained to become future leaders and society’s best hope in all times.
-      </p>
-      <p class="text-center mt-2 text-muted" style="font-size:0.95rem;">
-        <em>Note: Actual admission figures will be updated by the school administration regularly.</em>
-      </p>
+    <section aria-labelledby="steps-heading">
+      <span class="eyebrow">How to apply</span>
+      <h2 id="steps-heading">The admission process</h2>
+      <div class="card-grid admission-steps">
+        <article class="card">
+          <h3>Make an enquiry</h3>
+          <p>Contact the school to ask about the form you are applying for, available places, current dates and how applications are being received.</p>
+        </article>
+        <article class="card">
+          <h3>Confirm what to bring</h3>
+          <p>Ask the administration for the current official checklist. They will let you know which records or forms are needed for your circumstances.</p>
+        </article>
+        <article class="card">
+          <h3>Submit your application</h3>
+          <p>Follow the instructions provided by the school and submit the requested information to the administration for review.</p>
+        </article>
+        <article class="card">
+          <h3>Receive next steps</h3>
+          <p>The school will explain the outcome, reporting arrangements and any remaining steps directly to the applicant or family.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="prepare-heading">
+      <span class="eyebrow">Be prepared</span>
+      <h2 id="prepare-heading">Before you contact us</h2>
+      <p>To help the administration advise you, have these details ready where applicable:</p>
+      <ul class="content-list" style="margin-top: 1rem;">
+        <li><strong>Student details:</strong> Full name, date of birth and the form being requested.</li>
+        <li><strong>Previous school:</strong> Name of the school and the student's current or most recently completed form.</li>
+        <li><strong>Academic records:</strong> Ask whether examination results, reports or a transfer letter are needed for this application.</li>
+        <li><strong>Parent or guardian contact:</strong> A current phone number and other contact details requested by the school.</li>
+      </ul>
+      <p class="admission-note"><strong>Please note:</strong> This is a preparation guide, not the official document checklist. Requirements can vary by form and application type. Confirm the current instructions with the school before making copies or travelling.</p>
+    </section>
+
+    <section aria-labelledby="faq-heading">
+      <span class="eyebrow">Helpful information</span>
+      <h2 id="faq-heading">Common questions</h2>
+      <div class="admission-faq">
+        <details>
+          <summary>How do I find out if there are places available?</summary>
+          <p>Contact the school administration directly. Availability and application periods may change during the year.</p>
+        </details>
+        <details>
+          <summary>Can I apply for a transfer into another form?</summary>
+          <p>Ask the administration about transfer availability and the records they require to assess the request.</p>
+        </details>
+        <details>
+          <summary>Where can I get the official application requirements?</summary>
+          <p>Contact the school before applying. The administration can provide the latest instructions and tell you how to submit an application.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="admission-contact" aria-labelledby="contact-admissions-heading">
+      <h2 id="contact-admissions-heading">Ready to ask us a question?</h2>
+      <p>Get in touch with the school for the latest admission information.</p>
+      <a href="contact.html" class="btn btn-accent">Contact the school</a>
     </section>
   </main>
 
