@@ -2,11 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=home.html">
-  <title>Mrisho Gambo Secondary School</title>
-  <script>window.location.href = "home.html";</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Mrisho Gambo Secondary School. Explore school information, departments, admissions, results, news and learning resources.">
+  <title>Home | Mrisho Gambo Secondary School</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p>Redirecting to <a href="home.html">Home</a>...</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="school-logo.jpg" alt="Mrisho Gambo Secondary School logo" class="school-logo">
+      <h1>Mrisho Gambo Secondary School</h1>
+      <p class="tagline">Educate • Inspire • Innovate</p>
+    </div>
+  </header>
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <span class="nav-brand">Menu</span>
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <ul>
+      <li><a href="home.html" class="active">Home</a></li><li><a href="about.html">About</a></li><li><a href="departments.html">Departments</a></li><li><a href="admission.html">Admission</a></li><li><a href="results.html">Results</a></li><li><a href="news.html">News</a></li><li><a href="notes.html">Notes & Exams</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="welcome-banner" aria-labelledby="welcome-title">
+      <img src="school-welcome-banner.svg" alt="Illustration welcoming students to Mrisho Gambo Secondary School">
+      <div class="welcome-banner-copy"><span class="eyebrow">Welcome</span><h2 id="welcome-title">Learn today. Lead tomorrow.</h2><p>Education with discipline, curiosity and character.</p></div>
+    </section>
+    <div class="stat-strip">
+      <div class="stat"><span class="stat-num">12</span><span class="stat-label">Subject Departments</span></div>
+      <div class="stat"><span class="stat-num">4</span><span class="stat-label">Forms, I–IV</span></div>
+      <div class="stat"><span class="stat-num">2026</span><span class="stat-label">Academic Year</span></div>
+    </div>
+    <span class="eyebrow">Find your way around</span>
+    <p class="page-subtitle subtitle-left">Everything about admissions, academics and school life, in one place.</p>
+    <div class="card-grid">
+      <article class="card"><h3>About Us</h3><p>Discover our mission, vision, history and the values that guide us every day.</p><a href="about.html" class="btn">Learn More</a></article>
+      <article class="card"><h3>Admissions</h3><p>Learn how to apply and ask the school about current requirements.</p><a href="admission.html" class="btn">Apply Now</a></article>
+      <article class="card"><h3>Results</h3><p>Find examination results and information about official releases.</p><a href="results.html" class="btn">View Results</a></article>
+      <article class="card"><h3>News & Events</h3><p>Read school news and event updates.</p><a href="news.html" class="btn">Read News</a></article>
+      <article class="card"><h3>Notes & Exams</h3><p>Access external study materials and past examination papers.</p><a href="notes.html" class="btn">View Materials</a></article>
+      <article class="card"><h3>Contact Us</h3><p>Get in touch with the school for an inquiry.</p><a href="contact.html" class="btn">Contact</a></article>
+    </div>
+    <div class="bulletin-grid mt-2">
+      <div class="notifications-box"><h3>Notifications</h3><ul><li>End-of-Year Holidays: 25th December – 5th January.</li><li>Past event: Sports Day — 10 November 2026.</li></ul></div>
+      <div class="events-box"><h3>Events</h3><ul><li>Past event: Sports Day — 10 November 2026.</li><!-- TODO: Confirm upcoming event dates with the school before publishing. --></ul></div>
+    </div>
+  </main>
+  <footer class="site-footer"><p>&copy; 2026 Mrisho Gambo Secondary School. All Rights Reserved.</p><p class="footer-contact">Address: To be confirmed · Phone: To be confirmed · Email: To be confirmed</p><!-- TODO: Add verified school address, general phone number and school email. --></footer>
+  <script src="site.js" defer></script>
 </body>
 </html>
